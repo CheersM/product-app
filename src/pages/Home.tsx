@@ -9,14 +9,17 @@ import 'slick-carousel/slick/slick-theme.css';
 
 const Home: FC = () => {
   const [products, setProducts] = useState<Product[]>([]);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
     (async () => {
       try {
+        setIsLoading(true);
         const { data } = await axios.get<Product[]>(
           'https://api.thedogapi.com/v1/breeds?limit=8&page=0',
         );
         setProducts(data);
+        setIsLoading(false);
       } catch (error) {
         alert('Error while requesting card data at the slider');
         console.error(error);
@@ -56,8 +59,8 @@ const Home: FC = () => {
       <div>
         <h2>Home Page</h2>
         <Slider {...settings}>
-          {products.map((item) => (
-            <Card item={item} key={item.id} />
+          {(isLoading ? [...Array(8)] : products).map((item, index) => (
+            <Card item={item} key={index} loading={isLoading} />
           ))}
         </Slider>
       </div>
