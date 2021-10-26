@@ -13,6 +13,16 @@ body {
   font-family: 'Poppins';
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -21,6 +31,8 @@ header {
 }
 
 footer {
+  flex: 0 0 auto;
+  bottom: 0;
   display: flex;
   align-items: flex-start;
   color: #fff;
@@ -64,7 +76,7 @@ footer {
 
 .card {
   width: 350px;
-  max-height: 475px;
+  height: 475px;
   border: 3px solid #f2f2f2;
   margin: 10px;
 }

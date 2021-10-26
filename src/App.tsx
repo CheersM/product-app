@@ -6,11 +6,13 @@ import Footer from './components/Footer';
 
 const App: FC = () => {
   return (
-    <>
-      <Navbar />
-      <AppRouter />
+    <div className="wrapper">
+      <div className="content">
+        <Navbar />
+        <AppRouter />
+      </div>
       <Footer />
-    </>
+    </div>
   );
 };
 
