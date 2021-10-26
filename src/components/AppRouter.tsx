@@ -1,6 +1,5 @@
-import React from 'react';
-import { Switch, Route } from 'react-router-dom';
-import { routes } from '../router';
+import { Switch, Route, Redirect } from 'react-router-dom';
+import { RouteNames, routes } from '../router';
 
 function AppRouter() {
   return (
@@ -8,6 +7,7 @@ function AppRouter() {
       {routes.map((route) => (
         <Route key={route.path} path={route.path} exact={route.exact} component={route.component} />
       ))}
+      <Redirect to={RouteNames.HOME} />
     </Switch>
   );
 }

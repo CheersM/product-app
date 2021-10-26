@@ -19,7 +19,9 @@ const Card = ({ item, loading }: { item: Product; loading: boolean }) => {
         </ContentLoader>
       ) : (
         <div className="card">
-          <img width={350} height={362} src={item.image.url} alt="prod" />
+          <div className="card-img">
+            <img width={350} height={360} src={item.image.url} alt="prod" />
+          </div>
           <p>{item.name}</p>
           <h2>{item.bred_for}</h2>
         </div>
