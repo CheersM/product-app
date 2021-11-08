@@ -7,8 +7,8 @@ import Footer from './components/Footer';
 const App: FC = () => {
   return (
     <div className="wrapper">
+      <Navbar />
       <div className="content">
-        <Navbar />
         <AppRouter />
       </div>
       <Footer />

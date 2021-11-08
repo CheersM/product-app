@@ -1,4 +1,5 @@
 body {
+  height: 100%;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
     'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
@@ -14,13 +15,13 @@ body {
 }
 
 .wrapper {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  height: 100%;
 }
 
 .content {
-  flex: 1 0 auto;
+  flex: 1 1 auto;
 }
 
 header {
@@ -31,8 +32,6 @@ header {
 }
 
 footer {
-  flex: 0 0 auto;
-  bottom: 0;
   display: flex;
   align-items: flex-start;
   color: #fff;
@@ -106,6 +105,38 @@ footer {
 
 .home-block {
   margin: 150px 100px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .slick-next {
