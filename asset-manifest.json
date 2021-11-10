@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/product-app/static/css/main.04ffee37.chunk.css",
+    "main.css": "/product-app/static/css/main.c003f4cc.chunk.css",
     "main.js": "/product-app/static/js/main.630ae956.chunk.js",
     "main.js.map": "/product-app/static/js/main.630ae956.chunk.js.map",
     "runtime-main.js": "/product-app/static/js/runtime-main.5c45a99b.js",
@@ -10,7 +10,7 @@
     "static/js/2.b5e60d4a.chunk.js.map": "/product-app/static/js/2.b5e60d4a.chunk.js.map",
     "index.html": "/product-app/index.html",
     "static/css/2.031abca3.chunk.css.map": "/product-app/static/css/2.031abca3.chunk.css.map",
-    "static/css/main.04ffee37.chunk.css.map": "/product-app/static/css/main.04ffee37.chunk.css.map",
+    "static/css/main.c003f4cc.chunk.css.map": "/product-app/static/css/main.c003f4cc.chunk.css.map",
     "static/js/2.b5e60d4a.chunk.js.LICENSE.txt": "/product-app/static/js/2.b5e60d4a.chunk.js.LICENSE.txt",
     "static/media/index.css": "/product-app/static/media/prev2.d81b65f3.svg",
     "static/media/slick-theme.css": "/product-app/static/media/slick.c94f7671.ttf"
@@ -19,7 +19,7 @@
     "static/js/runtime-main.5c45a99b.js",
     "static/css/2.031abca3.chunk.css",
     "static/js/2.b5e60d4a.chunk.js",
-    "static/css/main.04ffee37.chunk.css",
+    "static/css/main.c003f4cc.chunk.css",
     "static/js/main.630ae956.chunk.js"
   ]
 }
